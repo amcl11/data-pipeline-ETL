@@ -21,9 +21,9 @@ CREATE TABLE "subcategory" (
 
 CREATE TABLE "contacts" (
     "contact_id" int   NOT NULL,
-    "first_name" varchar(30)   NOT NULL,
-    "last_name" varchar(30)   NOT NULL,
-    "email" varchar(40)   NOT NULL,
+    "first_name" varchar(50)   NOT NULL,
+    "last_name" varchar(50)   NOT NULL,
+    "email" varchar(50)   NOT NULL,
     CONSTRAINT "pk_contacts" PRIMARY KEY (
         "contact_id"
      )
@@ -32,14 +32,14 @@ CREATE TABLE "contacts" (
 CREATE TABLE "campaign" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
-    "company_name" varchar(30)   NOT NULL,
-    "description" varchar(50)   NOT NULL,
-    "goal" int   NOT NULL,
-    "pledged" int   NOT NULL,
-    "outcome" varchar(20   NOT NULL,
+    "company_name" varchar(50)   NOT NULL,
+    "description" text   NOT NULL,
+    "goal" float   NOT NULL,
+    "pledged" float   NOT NULL,
+    "outcome" varchar(50)   NOT NULL,
     "backers_count" int   NOT NULL,
-    "country" varchar(10)   NOT NULL,
-    "currency" varchar(10)   NOT NULL,
+    "country" varchar(30)   NOT NULL,
+    "currency" varchar(30)   NOT NULL,
     "launched_date" date   NOT NULL,
     "end_date" date   NOT NULL,
     "category_id" varchar(10)   NOT NULL,
