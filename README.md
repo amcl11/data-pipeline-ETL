@@ -16,10 +16,10 @@ For the ETL mini project, we built an ETL pipeline using Python, Pandas, and Pyt
 - subcategory.csv
 - contacts.csv
 
-### **Code file**
+### **Jupyter Notebook file:**
  - ETL_Mini_Project_AMcLaughlin.ipynb
 
-### **Database Schema**
+### **Database Schema:**
  - crowdfunding_db_schema.sql
 
 
